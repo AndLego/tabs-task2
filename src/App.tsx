@@ -23,12 +23,8 @@ function App() {
     setLoading(false);
   }, []);
 
-  if (loading) {
+  if (loading || !jobs) {
     return <Title title={"hang on, we are loading..."} />;
-  }
-
-  if (!jobs) {
-    return <Title title={"loading..."} />;
   }
 
   return (

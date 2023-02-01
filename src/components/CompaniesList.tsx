@@ -8,13 +8,13 @@ interface CompaniesListProps {
 }
 
 const CompaniesList = ({ jobs, setCurrent, current }: CompaniesListProps) => {
-  const [active, setActive] = React.useState(true);
 
   return (
     <aside>
       {jobs.map((job, index) => {
         return (
           <button
+          key={index}
             className={`btn ${index === current && "active"}`}
             onClick={() => setCurrent(index)}
           >

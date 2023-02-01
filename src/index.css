@@ -123,3 +123,36 @@ aside button {
   color: var(--gray1);
   font-weight: 400;
 }
+
+.details > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.details > div svg {
+  color: var(--blue1);
+  font-size: 2.6rem;
+}
+
+.details button {
+  border: none;
+  background-color: var(--blue1);
+  color: var(--blue2);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  width: 160px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-left: 28px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.details button:hover{
+  background-color: var(--blue2);
+  color: var(--blue1);
+}
