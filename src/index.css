@@ -1,0 +1,125 @@
+:root {
+  --blue1: #2caeba;
+  --blue2: #bff8fd;
+  --gray1: #617d98;
+  --gray2: #dae2ec;
+  --white: #f1f5f8;
+  --font: #102a42;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--font);
+  background-color: var(--white);
+}
+
+/* Title Section */
+
+section.title {
+  text-transform: capitalize;
+  height: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 8px;
+}
+
+section.title h1 {
+  font-size: 3.8rem;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+section.title .underline {
+  height: 4px;
+  background-color: var(--blue1);
+  width: 80px;
+}
+
+@media (max-width: 800px) {
+  section.title h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Main */
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 76px;
+  gap: 48px;
+}
+
+/* Nav Bar -- Companies List*/
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+aside button {
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  width: 180px;
+}
+
+.btn {
+  cursor: pointer;
+  height: 32px;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  color: var(--blue1);
+  box-shadow: -2px 0 var(--font);
+}
+
+.active {
+  color: var(--blue1);
+  box-shadow: -2px 0 var(--font);
+}
+
+/* Main Content --- Details */
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  letter-spacing: 1px;
+  width: 64%;
+}
+
+.details h1 {
+  font-size: 2.6rem;
+  font-weight: 100;
+}
+
+.details h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--gray1);
+  background-color: var(--gray2);
+  width: 80px;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.details > p {
+  font-size: 1.5rem;
+  color: var(--gray1);
+  font-weight: 400;
+}
